@@ -17,13 +17,13 @@ bt_network.sync()
 
 app = FastAPI()
 
-class QueryParams(BaseModel):
-    trade_pair_id: str
-    trade_pair: str
-    fees: float
+# class QueryParams(BaseModel):
+#     trade_pair_id: str
+#     trade_pair: str
+#     fees: float
 
 @app.post("/search/")
-async def search_synapse(query_params: QueryParams):
+async def search_synapse():
     #yTradeView
     synapse=SendSignal(
         signal={'trade_pair': {'trade_pair_id': 'ETHUSD', 'trade_pair': 'ETH/USD', 'fees': 0.003, 'min_leverage': 0.001, 'max_leverage': 20},
