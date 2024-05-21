@@ -1,0 +1,13 @@
+pydantic<2.0
+bittensor == 6.9.3
+polygon-api-client
+torch
+tensorflow
+scikit-learn
+pandas
+twelvedata
+flask
+waitress == 2.1.2
+matplotlib
+sortedcontainers
+pandas-market-calendars
